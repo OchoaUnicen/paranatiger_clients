@@ -26,6 +26,7 @@ body {
 
 .container_x {
   /* width: 50%; */
+  margin-top:40px !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,6 +197,7 @@ button.active {
       /* width: 90%; */
       text-align: center;
       margin-top: 20px;
+      margin-bottom: 40px;
     }
   }
   
