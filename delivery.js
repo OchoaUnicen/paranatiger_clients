@@ -38,12 +38,25 @@ $(() => {
             cl_name: "Emtch",
             deliver_date: "06/03/2025",
             img_url: "paranatiger_aerospace_solutions_logo.png"
+        },
+        {
+            key_code: "asd123",
+            cl_name: "Pmdthe",
+            deliver_date: "07/03/2025",
+            img_url: "TheNGC_logo.png"
         }
+    ]
+
+
+    const key_codes = [
+        "\x53\x6b\x34\x38\x37\x39\x36\x32\x31\x51\x66\x40\x65\x6c\x52\x36\x76\x4e",
+        "asd123"
     ]
 
 
   function key (){
     let pass = document.getElementById("pass").value;
+    let cl_id = 0;
 
 
     console.log(cls_);
@@ -51,7 +64,18 @@ $(() => {
     let cl_found = false;
 
     for(let i = 0; i < cls_.length; i++){
-        if (pass === "\x53\x6b\x34\x38\x37\x39\x36\x32\x31\x51\x66\x40\x65\x6c\x52\x36\x76\x4e"){
+
+        for(let j = 0; j < key_codes.length; j++){
+            if (pass === key_codes[j]){
+                i = j;
+                cl_found = true;
+            }
+        }
+
+
+
+
+        if (cl_found){
             let info_ = document.getElementById("info_"); 
             info_.style.display = "";
     
@@ -106,7 +130,7 @@ $(() => {
             $('.login-modal, .overlay').fadeOut();
             document.body.style.background = "none";
             // onContentLoad();
-            cl_found = true;
+            
             return;
         }
     }
