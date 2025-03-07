@@ -153,7 +153,7 @@ button.active {
     opacity: 1;
 }
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 940px) {
   .card {
     width: 35rem;
     padding: 0rem 5rem;
@@ -179,7 +179,7 @@ button.active {
 
 
 
-@media screen and (max-width: 739px) {
+@media screen and (max-width: 939px) {
     body {
       flex-direction: column;
       overflow: auto;
