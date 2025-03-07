@@ -40,7 +40,7 @@ $(() => {
             img_url: "paranatiger_aerospace_solutions_logo.png"
         },
         {
-            key_code: "asd123",
+            key_code: "\x53\x6b\x6c\x31\x32\x30\x33\x39\x52\x54\x66\x30\x32\x40\x30\x32\x61\x47\x72\x6f\x6b",
             cl_name: "Pmdthe",
             deliver_date: "07/03/2025",
             img_url: "TheNGC_logo.png"
@@ -50,7 +50,7 @@ $(() => {
 
     const key_codes = [
         "\x53\x6b\x34\x38\x37\x39\x36\x32\x31\x51\x66\x40\x65\x6c\x52\x36\x76\x4e",
-        "asd123"
+        "\x53\x6b\x6c\x31\x32\x30\x33\x39\x52\x54\x66\x30\x32\x40\x30\x32\x61\x47\x72\x6f\x6b"
     ]
 
 
