@@ -89,9 +89,7 @@ $(() => {
             download_button.addEventListener("click", function (event) {
                 // Evita que el enlace siga su comportamiento por defecto
                 event.preventDefault();
-            
-                // Suponiendo que cls_[i] ya tiene valores definidos
-                let i = 0; // Asegúrate de que 'i' tiene el índice correcto
+
                 let fileName = cls_[i].img_url;
                 let filePath = "imgs/" + fileName;
             
