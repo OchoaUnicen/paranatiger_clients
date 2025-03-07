@@ -16,7 +16,7 @@
 <body>
 
 
-    <div id="container_" class="container_x">
+    <div style="display:none;" id="container_" class="container_x">
         <div class="card">
             <div class="sneaker">
                 <div class="invi circle"></div>
@@ -24,7 +24,7 @@
                     alt="adidas" />
             </div>
             <div class="info">
-                <h1 class="title invi">Delivered: 06/03/2025</h1>
+                <h1 class="title invi">Delivered: <span id="deliver_date">06/03/2025</span></h1>
 
                 <div class="invi sizes">
                     <button>39</button>
@@ -41,13 +41,13 @@
 
     
 
-    <div id="info_" class="info_">
+    <div style="display:none;" id="info_" class="info_">
         <h3 class="">
-            Client: Emtch
+            Client: <span id="client_name_span">Emtch</span>
         </h3>
         <br>
         <h3 class="">
-            Delivered: 06/03/2025
+            Delivered: <span id="deliver_date_span">06/03/2025</span>
         </h3>
 
         <br>
@@ -77,8 +77,17 @@
 
 
         <div class="purchase">
-            <button>Download</button>
+            <a id="download_button" href="" target="_blank">
+                <i class="fa fa-download" target="_blank"></i>
+              Download
+            </a>
         </div>
+
+
+
+
+
+
     </div>
 
 
